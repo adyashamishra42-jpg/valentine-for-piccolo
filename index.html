@@ -107,19 +107,8 @@
       noBtn.style.display = "none";
 
       setInterval(createHeart, 200);
-
-      const phoneNumber = "919692303058"; // ← YOUR WhatsApp number
-      const message = "I said YES ❤️ Will you be my Valentine? 😘";
-
-      const whatsappURL =
-        `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-
-      setTimeout(() => {
-        window.open(whatsappURL, "_blank");
-      }, 1200);
-    });
-
-    function createHeart() {
+     
+      function createHeart() {
       const heart = document.createElement("div");
       heart.className = "heart";
       heart.innerHTML = "❤️";
